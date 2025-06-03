@@ -2,12 +2,12 @@
 "use client";
 
 import React, { createContext, useState, useEffect, type ReactNode } from 'react';
-import { onAuthStateChanged, type User as FirebaseUser } from 'firebase/auth';
-import { doc, getDoc } from 'firebase/firestore';
-import { auth, db } from '@/lib/firebase';
-import type { UserProfile, AuthContextType, AuthState } from '@/types';
+import type { AuthContextType, AuthState, UserProfile } from '@/types';
 import { ROLES, type Role } from '@/lib/constants';
 import { login as authServiceLogin, logout as authServiceLogout } from '@/lib/authService';
+import { onAuthStateChanged, User as FirebaseUser } from 'firebase/auth';
+import { doc, getDoc } from 'firebase/firestore';
+import { auth, db } from '@/lib/firebase';
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
 

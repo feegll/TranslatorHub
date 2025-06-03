@@ -14,7 +14,7 @@ import { AlertCircle, LogIn } from 'lucide-react';
 export default function LoginForm() {
   const [identifier, setIdentifier] = useState('');
   const [password, setPassword] = useState('');
-  const { login, error: authError, loading } = useAuth();
+  const { login, error: authError } = useAuth(); // Removed loading as login is now sync
   const { t } = useLanguage();
   const [formError, setFormError] = useState<string | null>(null);
 
@@ -25,12 +25,11 @@ export default function LoginForm() {
       setFormError("Both fields are required."); // Basic validation
       return;
     }
-    try {
-      await login(identifier, password);
-      // Redirect is handled by the page listening to auth state
-    } catch (err) {
-      // Error from useAuth hook will be set, or display a generic one
-      setFormError(t('login.error'));
+
+    if (identifier === "admin" && password === "1269") {
+      login(identifier, password); // Call login to set session/state
+    } else {
+      setFormError("Invalid credentials.");
     }
   };
 
@@ -51,7 +50,7 @@ export default function LoginForm() {
               onChange={(e) => setIdentifier(e.target.value)}
               placeholder="admin or translator@example.com"
               required
-              disabled={loading}
+
             />
           </div>
           <div className="space-y-2">
@@ -63,7 +62,7 @@ export default function LoginForm() {
               onChange={(e) => setPassword(e.target.value)}
               placeholder="••••••••"
               required
-              disabled={loading}
+
             />
           </div>
           {(authError || formError) && (
@@ -73,12 +72,8 @@ export default function LoginForm() {
               <AlertDescription>{authError?.message || formError || t('login.error')}</AlertDescription>
             </Alert>
           )}
-          <Button type="submit" className="w-full" disabled={loading}>
-            {loading ? (
-              <div className="animate-spin rounded-full h-5 w-5 border-t-2 border-b-2 border-primary-foreground"></div>
-            ) : (
-              <LogIn className="mr-2 h-4 w-4" />
-            )}
+          <Button type="submit" className="w-full">
+             <LogIn className="mr-2 h-4 w-4" />
             {t('login.submitButton')}
           </Button>
         </form>
