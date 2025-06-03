@@ -26,11 +26,8 @@ export default function LoginForm() {
       return;
     }
 
-    if (identifier === "admin" && password === "1269") {
-      login(identifier, password); // Call login to set session/state
-    } else {
-      setFormError("Invalid credentials.");
-    }
+    // Call login to set session/state. AuthContext will handle credential check and errors.
+    login(identifier, password);
   };
 
   return (
