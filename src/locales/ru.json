@@ -1,0 +1,73 @@
+
+{
+  "appName": "TranslatorHub",
+  "login": {
+    "title": "Вход в TranslatorHub",
+    "usernameLabel": "Имя пользователя или Email",
+    "passwordLabel": "Пароль",
+    "submitButton": "Войти",
+    "adminCredentials": "Админ: admin / 1269",
+    "translatorCredentials": "Переводчик: translator / password",
+    "error": "Неверные учетные данные. Пожалуйста, попробуйте еще раз."
+  },
+  "userNav": {
+    "profile": "Профиль",
+    "settings": "Настройки",
+    "logout": "Выйти"
+  },
+  "navigation": {
+    "dashboard": "Дашборд",
+    "leaderboards": "Таблицы лидеров",
+    "spenders": "Спонсоры",
+    "adminPanel": "Панель администратора",
+    "translators": "Переводчики",
+    "users": "Пользователи",
+    "dailyInput": "Ежедневный ввод",
+    "weeklyInput": "Еженедельный ввод",
+    "monthlyInput": "Ежемесячный ввод",
+    "weeklyActions": "Еженедельные действия",
+    "top9Legends": "Топ 9 Легенд"
+  },
+  "dashboard": {
+    "title": "Обзор Дашборда",
+    "timeframes": {
+      "daily": "Ежедневно",
+      "weekly": "Еженедельно",
+      "monthly": "Ежемесячно"
+    },
+    "totalTranslators": "Всего переводчиков",
+    "totalBalance": "Общий баланс",
+    "averageBalance": "Средний баланс",
+    "topTranslators": "Лучшие переводчики",
+    "noData": "Данные отсутствуют."
+  },
+  "leaderboards": {
+    "title": "Таблицы лидеров",
+    "top9Legends": "Топ 9 Легенд всех времен",
+    "bestWeeklyGrowth": "Лучший недельный рост",
+    "mostWeeklyActions": "Больше всего действий за неделю"
+  },
+  "spenders": {
+    "title": "Панель спонсоров",
+    "totalSpenders": "Всего спонсоров",
+    "totalAmountSpent": "Общая сумма потрачено",
+    "nameHeader": "Имя",
+    "amountHeader": "Сумма",
+    "actionsHeader": "Действия",
+    "addSpender": "Добавить спонсора",
+    "editSpender": "Редактировать спонсора",
+    "deleteSpender": "Удалить спонсора",
+    "confirmDelete": "Вы уверены, что хотите удалить этого спонсора?"
+  },
+  "adminPanel": {
+    "title": "Панель администратора",
+    "quickClear": "Быстрая очистка",
+    "deleteAll": "Удалить все",
+    "saveValues": "Сохранить значения"
+  },
+  "general": {
+    "loading": "Загрузка...",
+    "error": "Произошла ошибка",
+    "noAccess": "У вас нет разрешения на просмотр этой страницы."
+  }
+}

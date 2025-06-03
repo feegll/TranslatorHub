@@ -1,0 +1,73 @@
+
+{
+  "appName": "TranslatorHub",
+  "login": {
+    "title": "Login to TranslatorHub",
+    "usernameLabel": "Username or Email",
+    "passwordLabel": "Password",
+    "submitButton": "Login",
+    "adminCredentials": "Admin: admin / 1269",
+    "translatorCredentials": "Translator: translator / password",
+    "error": "Invalid credentials. Please try again."
+  },
+  "userNav": {
+    "profile": "Profile",
+    "settings": "Settings",
+    "logout": "Logout"
+  },
+  "navigation": {
+    "dashboard": "Dashboard",
+    "leaderboards": "Leaderboards",
+    "spenders": "Spenders",
+    "adminPanel": "Admin Panel",
+    "translators": "Translators",
+    "users": "Users",
+    "dailyInput": "Daily Input",
+    "weeklyInput": "Weekly Input",
+    "monthlyInput": "Monthly Input",
+    "weeklyActions": "Weekly Actions",
+    "top9Legends": "Top 9 Legends"
+  },
+  "dashboard": {
+    "title": "Dashboard Overview",
+    "timeframes": {
+      "daily": "Daily",
+      "weekly": "Weekly",
+      "monthly": "Monthly"
+    },
+    "totalTranslators": "Total Translators",
+    "totalBalance": "Total Balance",
+    "averageBalance": "Average Balance",
+    "topTranslators": "Top Translators",
+    "noData": "No data available."
+  },
+  "leaderboards": {
+    "title": "Leaderboards",
+    "top9Legends": "Top 9 Legends of All Time",
+    "bestWeeklyGrowth": "Best Weekly Growth",
+    "mostWeeklyActions": "Most Weekly Actions"
+  },
+  "spenders": {
+    "title": "Spenders Panel",
+    "totalSpenders": "Total Spenders",
+    "totalAmountSpent": "Total Amount Spent",
+    "nameHeader": "Name",
+    "amountHeader": "Amount Spent",
+    "actionsHeader": "Actions",
+    "addSpender": "Add Spender",
+    "editSpender": "Edit Spender",
+    "deleteSpender": "Delete Spender",
+    "confirmDelete": "Are you sure you want to delete this spender?"
+  },
+  "adminPanel": {
+    "title": "Admin Panel",
+    "quickClear": "Quick Clear",
+    "deleteAll": "Delete All",
+    "saveValues": "Save Values"
+  },
+  "general": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "noAccess": "You do not have permission to view this page."
+  }
+}
